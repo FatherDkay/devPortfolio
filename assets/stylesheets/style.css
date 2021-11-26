@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #ffffff;
+  }
+  
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    opacity: 90%;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 70%;
+  }
+  
+
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  .toolBox {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-top: 20px;
+        box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+      }
+
+  .toolBoxItems {
+    height:180px;
+    font-size: 3.5rem;
+  }
+
+  .education {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-top: 20px;
+        box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+      }
+
+  .welcome {
+    text-align: center;
+    background-color: rgb(236, 202, 250);
+    line-height: 1.7;
+    padding: 20px;
+    margin-top: 20px;
+        box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+      }
+
+  .about {
+    text-align: center;
+    background-color: rgb(210, 121, 245);
+    line-height: 1.6;
+    padding: 20px;
+    margin-top: 20px;
+        box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+      }
+
+  .projects {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(224, 167, 246);
+    line-height: 1.6;
+    padding: 20px;
+    margin-top: 20px;
+        box-shadow:
+              inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+      }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media scree and (max-widgh: 918px) {
+    .toolBoxItems {
+      height: 200px !important;
+    }
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .toolBoxItems {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  blockquote {
+    padding: 20px;
+    box-shadow:
+         inset 0 -3em 3em rgba(0,0,0,0.1),
+               0 0  0 2px rgb(255,255,255),
+               0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
+  .grid-container {
+    text-align: center;
+    display: grid;
+    float: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    padding: 15px;
+  }
+
+  .access {
+    opacity: 70%;
+    background-image: url("../images/access.jpg") !important;
+    padding: 10px;
+  }
+
+  .access:hover {
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
+
+  .runBuddy {
+    opacity: 70%;
+    background-image: url("../images/RunBuddy-Small.jpg") !important;
+    padding: 10px;
+  }
+
+  .runBuddy:hover {
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
+
+  .tempoFinder {
+    opacity: 70%;
+    background-image: url("../images/music-run-vector-1263826.jpg") !important;
+    padding: 10px;
+  }
+
+  .tempoFinder:hover {
+    opacity: 100%;
+    color: black;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
+
+  .weather {
+    opacity: 70%;
+    background-image: url("../images/rain.jpg") !important;
+    padding: 10px;
+  }
+
+  .weather:hover {
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
