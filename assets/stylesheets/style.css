@@ -49,13 +49,12 @@
   /* Left column */
   .leftcolumn {   
     float: left;
-    width: 70%;
+    width: 75%;
   }
   
-
   .rightcolumn {
     float: left;
-    width: 30%;
+    width: 25%;
     background-color: #f1f1f1;
     padding-left: 20px;
   }
@@ -112,6 +111,7 @@
       }
 
   .projects {
+    text-decoration: none;
     text-align: center;
     align-items: center;
     background-color: rgb(224, 167, 246);
@@ -131,7 +131,7 @@
     clear: both;
   }
   
-  @media scree and (max-widgh: 918px) {
+  @media screen and (max-widgh: 918px) {
     .toolBoxItems {
       height: 200px !important;
     }
@@ -163,6 +163,7 @@
                0 0  0 2px rgb(255,255,255),
                0.3em 0.3em 1em rgba(0,0,0,0.3);
   }
+
   .grid-container {
     text-align: center;
     display: grid;
@@ -170,6 +171,11 @@
     grid-template-columns: 30% 30% 30%;
     grid-gap: 10px;
     padding: 15px;
+  }
+  
+  .grid-container a {
+    text-decoration: none;
+    color: black;
   }
 
   .access {
@@ -187,6 +193,7 @@
 
   .runBuddy {
     opacity: 70%;
+    text-decoration: none !important;
     background-image: url("../images/RunBuddy-Small.jpg") !important;
     padding: 10px;
   }
@@ -220,6 +227,32 @@
   .weather:hover {
     opacity: 100%;
     color: white;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
+
+  .scheduler {
+    opacity: 70%;
+    background-image: url("../images/Scheduler.jpg") !important;
+    padding: 10px;
+  }
+
+  .scheduler:hover {
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    box-shadow: 20px 20px 50px grey;
+  }
+
+  .minigram {
+    opacity: 70%;
+    background-image: url("../images/minigram.jpg") !important;
+    padding: 10px;
+  }
+
+  .minigram:hover {
+    opacity: 100%;
+    color: black;
     font-weight: bold;
     box-shadow: 20px 20px 50px grey;
   }
